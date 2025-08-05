@@ -1,0 +1,176 @@
+/* Just the Docs inspired theme */
+:root {
+    --color-text: #27262b;
+    --color-text-light: #5c5962;
+    --color-background: #fff;
+    --color-background-light: #f5f6fa;
+    --color-border: #eeebee;
+    --color-accent: #7253ed;
+    --color-accent-light: #5e41d0;
+    --font-family-system: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    --font-family-mono: "SFMono-Regular", Menlo, Consolas, monospace;
+    --spacing-unit: 1rem;
+    --border-radius: 4px;
+    --box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12), 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-family-system);
+    line-height: 1.6;
+    color: var(--color-text);
+    background-color: var(--color-background);
+    font-size: 16px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem;
+    min-height: 100vh;
+}
+
+header {
+    border-bottom: 1px solid var(--color-border);
+    padding-bottom: 2rem;
+    margin-bottom: 3rem;
+}
+
+.site-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--color-text);
+    margin: 0;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+}
+
+main {
+    max-width: 800px;
+}
+
+.intro {
+    margin-bottom: 3rem;
+}
+
+.intro p {
+    font-size: 1.125rem;
+    line-height: 1.7;
+    color: var(--color-text-light);
+    margin-bottom: 1.5rem;
+}
+
+.intro p:last-child {
+    margin-bottom: 0;
+}
+
+.tutorials-section {
+    border-top: 1px solid var(--color-border);
+    padding-top: 2rem;
+}
+
+.tutorials-section h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--color-text);
+    margin-bottom: 1.5rem;
+    letter-spacing: -0.01em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    line-height: 1.25;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+a {
+    color: var(--color-accent);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.15s ease-in-out;
+}
+
+a:hover {
+    border-bottom-color: var(--color-accent);
+}
+
+a:focus {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 2px;
+}
+
+code {
+    font-family: var(--font-family-mono);
+    font-size: 0.875em;
+    background-color: var(--color-background-light);
+    padding: 0.2em 0.4em;
+    border-radius: var(--border-radius);
+    border: 1px solid var(--color-border);
+}
+
+pre {
+    background-color: var(--color-background-light);
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius);
+    padding: 1rem;
+    overflow-x: auto;
+    margin: 1rem 0;
+}
+
+pre code {
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .container {
+        padding: 1.5rem 1rem;
+    }
+    
+    .site-title {
+        font-size: 2rem;
+    }
+    
+    .intro p {
+        font-size: 1rem;
+    }
+    
+    .tutorials-section h1 {
+        font-size: 1.75rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 1rem 0.75rem;
+    }
+    
+    .site-title {
+        font-size: 1.75rem;
+    }
+    
+    header {
+        padding-bottom: 1.5rem;
+        margin-bottom: 2rem;
+    }
+    
+    .intro {
+        margin-bottom: 2rem;
+    }
+    
+    .tutorials-section {
+        padding-top: 1.5rem;
+    }
+}
